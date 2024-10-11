@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net35;net6.0-windows</TargetFrameworks>
+		<TargetFrameworks>net35;net48;net6.0-windows</TargetFrameworks>
 		<OutputType>Library</OutputType>
 		<RootNamespace>Manina.Windows.Forms</RootNamespace>
 	</PropertyGroup>
@@ -27,7 +27,7 @@
 		<EnableNETAnalyzers>true</EnableNETAnalyzers>
 	</PropertyGroup>
 
-	<PropertyGroup Condition="'$(TargetFramework)' == 'net35'">
+	<PropertyGroup Condition="'$(TargetFramework)' == 'net35' OR '$(TargetFramework)' == 'net48'">
 		<NoWarn>$(NoWarn);CA1416</NoWarn>
 	</PropertyGroup>
 
@@ -76,7 +76,7 @@
 		<WarningLevel>0</WarningLevel>
 	</PropertyGroup>
 
-	<ItemGroup Condition="'$(TargetFramework)' == 'net35'">
+	<ItemGroup Condition="'$(TargetFramework)' == 'net35' OR '$(TargetFramework)' == 'net48'">
 		<Reference Include="System.Design" />
 	</ItemGroup>
 

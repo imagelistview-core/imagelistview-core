@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net35;net6.0-windows</TargetFrameworks>
+		<TargetFrameworks>net35;net48;net6.0-windows</TargetFrameworks>
 		<OutputType>Library</OutputType>
 		<RootNamespace>Manina.Windows.Forms</RootNamespace>
 		<AssemblyName>WPFThumbnailExtractor</AssemblyName>
@@ -28,7 +28,7 @@
 		<EnableNETAnalyzers>true</EnableNETAnalyzers>
 	</PropertyGroup>
 
-	<PropertyGroup Condition="'$(TargetFramework)' == 'net35'">
+	<PropertyGroup Condition="'$(TargetFramework)' == 'net35' OR '$(TargetFramework)' == 'net48'">
 		<NoWarn>$(NoWarn);CA1416</NoWarn>
 	</PropertyGroup>
 
