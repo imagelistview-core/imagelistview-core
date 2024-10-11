@@ -21,4 +21,4 @@ jobs:
       uses: cake-build/cake-action@v2
       with:
         script-path: build.cake
-        target: Test
+        target: Build
