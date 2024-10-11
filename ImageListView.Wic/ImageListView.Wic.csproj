@@ -28,10 +28,6 @@
 		<EnableNETAnalyzers>true</EnableNETAnalyzers>
 	</PropertyGroup>
 
-	<PropertyGroup Condition="'$(TargetFramework)' == 'net35' OR '$(TargetFramework)' == 'net48'">
-		<NoWarn>$(NoWarn);CA1416</NoWarn>
-	</PropertyGroup>
-
 	<PropertyGroup Condition="'$(Configuration)' == 'Release'">
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 	</PropertyGroup>

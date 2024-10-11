@@ -50,3 +50,13 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("13.8.2.0")]
 [assembly: AssemblyFileVersion("13.8.2.0")]
+
+// If the AssemblyInfo.cs file generation is disabled for the project,
+// the required assembly level SupportedOSPlatform attribute can't be added
+// by the SDK. In this case, you could see warnings for a platform-specific APIs
+// usage even if you're targeting that platform. To resolve the warnings, enable the
+// AssemblyInfo.cs file generation or add the attribute manually in your project.
+// From: https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca1416#tfm-target-platforms
+#if NET6_0_OR_GREATER
+[assembly: System.Runtime.Versioning.SupportedOSPlatform("windows")]
+#endif
