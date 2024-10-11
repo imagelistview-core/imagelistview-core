@@ -4,6 +4,7 @@
 		<TargetFrameworks>net35;net6.0-windows</TargetFrameworks>
 		<OutputType>Library</OutputType>
 		<RootNamespace>Manina.Windows.Forms</RootNamespace>
+		<AssemblyName>WPFThumbnailExtractor</AssemblyName>
 	</PropertyGroup>
 
 	<PropertyGroup>
