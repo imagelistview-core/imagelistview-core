@@ -3,6 +3,10 @@
 	<PropertyGroup>
 		<TargetFrameworks>net35;net48;net6.0-windows</TargetFrameworks>
 		<OutputType>Library</OutputType>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<AssemblyName>ImageListViewCore</AssemblyName>
 		<RootNamespace>Manina.Windows.Forms</RootNamespace>
 	</PropertyGroup>
 
