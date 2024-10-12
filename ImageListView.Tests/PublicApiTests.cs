@@ -15,14 +15,5 @@ namespace ImageListView.Tests
 
             return Verifier.Verify(publicApi);
         }
-
-        [Fact]
-        public Task PublicApiShouldNotChange_Wic()
-        {
-            var publicApi = typeof(Manina.Windows.Forms.WPFExtractor).Assembly
-                .GeneratePublicApi();
-
-            return Verifier.Verify(publicApi);
-        }
     }
 }

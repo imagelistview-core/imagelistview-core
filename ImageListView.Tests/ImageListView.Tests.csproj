@@ -20,7 +20,6 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\ImageListView\ImageListView.csproj" />
-		<ProjectReference Include="..\ImageListView.Wic\ImageListView.Wic.csproj" />
 	</ItemGroup>
 
 </Project>

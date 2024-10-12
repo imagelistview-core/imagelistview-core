@@ -1,5 +1,6 @@
 ﻿[assembly: System.Runtime.InteropServices.ComVisible(false)]
 [assembly: System.Runtime.InteropServices.Guid("3eb67a8d-4c80-4c11-944d-c99ef0ec7eb9")]
+[assembly: System.Runtime.Versioning.SupportedOSPlatform("windows")]
 [assembly: System.Runtime.Versioning.TargetFramework(".NETCoreApp,Version=v6.0", FrameworkDisplayName=".NET 6.0")]
 namespace Manina.Windows.Forms
 {
@@ -1484,6 +1485,14 @@ namespace Manina.Windows.Forms
         Thumbnails = 3,
         HorizontalStrip = 4,
         VerticalStrip = 5,
+    }
+    public class WPFExtractor : Manina.Windows.Forms.GDIExtractor
+    {
+        public WPFExtractor() { }
+        public override string Name { get; }
+        public override Manina.Windows.Forms.Metadata GetMetadata(string path) { }
+        public override System.Drawing.Image GetThumbnail(System.Drawing.Image image, System.Drawing.Size size, Manina.Windows.Forms.UseEmbeddedThumbnails useEmbeddedThumbnails, bool useExifOrientation) { }
+        public override System.Drawing.Image GetThumbnail(string filename, System.Drawing.Size size, Manina.Windows.Forms.UseEmbeddedThumbnails useEmbeddedThumbnails, bool useExifOrientation) { }
     }
 }
 namespace Manina.Windows.Forms.ImageListViewItemAdaptors
