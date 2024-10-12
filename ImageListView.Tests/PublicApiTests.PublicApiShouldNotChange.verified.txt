@@ -1,7 +1,7 @@
-﻿[assembly: System.Runtime.InteropServices.ComVisible(false)]
-[assembly: System.Runtime.InteropServices.Guid("3eb67a8d-4c80-4c11-944d-c99ef0ec7eb9")]
-[assembly: System.Runtime.Versioning.SupportedOSPlatform("windows")]
+﻿[assembly: System.Reflection.AssemblyMetadata("RepositoryUrl", "https://github.com/imagelistview-core/imagelistview-core")]
+[assembly: System.Runtime.Versioning.SupportedOSPlatform("Windows7.0")]
 [assembly: System.Runtime.Versioning.TargetFramework(".NETCoreApp,Version=v6.0", FrameworkDisplayName=".NET 6.0")]
+[assembly: System.Runtime.Versioning.TargetPlatform("Windows7.0")]
 namespace Manina.Windows.Forms
 {
     [System.Runtime.InteropServices.ComVisible(true)]
