@@ -43,7 +43,7 @@
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
 		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-		<Description>A fork of ImageListView for the newer versions dotnet.</Description>
+		<Description>A fork of ImageListView for the newer versions of dotnet.</Description>
 		<RepositoryUrl>https://github.com/imagelistview-core/imagelistview-core</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/imagelistview-core/imagelistview-core</PackageProjectUrl>
 		<PackageTags>winforms; controls; listview; image; imagelistview; imagelistviewcore</PackageTags>

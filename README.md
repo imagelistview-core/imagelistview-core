@@ -1,32 +1,32 @@
-[![License](http://img.shields.io/github/license/oozcitak/imagelistview.svg?style=flat-square)](http://www.apache.org/licenses/LICENSE-2.0)
-[![Nuget](https://img.shields.io/nuget/v/ImageListView.svg?style=flat-square)](https://www.nuget.org/packages/ImageListView)
+﻿# ImageListViewCore
+A fork of [ImageListView][original] for the newer versions of dotnet.
 
-ImageListView is a winforms control for displaying a list of image files. It looks and operates similar to the standard ListView control. Image thumbnails are loaded asynchronously with a separate background thread.
+[![NuGet Version][nuget-shield]][nuget]
+[![NuGet Downloads][nuget-shield-dl]][nuget]
 
-ImageListView requires .NET framework 3.5 to take advantage of the Windows Imaging Component. It is possible to recompile ImageListView to [target .NET 2.0](https://github.com/oozcitak/imagelistview/wiki/WICSupport) without Windows Imaging Component.
+## Installation
+You can install this package via the `Package Manager Console` in Visual Studio.
 
-# Features #
-  * Asynchronously loaded image thumbnails
-  * [Custom renderers](https://github.com/oozcitak/imagelistview/wiki/ImageListViewRenderer)
-  * [Thumbnails, Gallery, Pane, Details, HorizontalStrip and VerticalStrip view modes](https://github.com/oozcitak/imagelistview/wiki/ViewModes)
-  * Ability to extract embedded thumbnails
-  * Drag&drop support
-  * Works with .NET 3.5
-  * Optionally works with [.NET 2.0](https://github.com/oozcitak/imagelistview/wiki/WICSupport) and [Mono 2.6](https://github.com/oozcitak/imagelistview/wiki/MonoSupport)
+```powershell
+Install-Package ImageListViewCore
+```
 
-![ImageListView](https://github.com/oozcitak/imagelistview/blob/wiki/ImageListView.thumbnails.jpg)
+## ImageListView
+- [Documentation](http://oozcitak.github.io/imagelistview)
+- [GitHub Repository][original]
+- [NuGet Package](https://www.nuget.org/packages/ImageListView)
+- [Sponsor](https://github.com/oozcitak/imagelistview#donations)
 
-# Installation #
+## ImageListView Contributors
+- [Özgür Özçıtak](https://github.com/oozcitak) *(Author)*
+- [Contributors](https://github.com/oozcitak/imagelistview/blob/master/ImageListView/Contrib.txt)
+- [GitHub Contributors](https://github.com/oozcitak/imagelistview/graphs/contributors)
 
-If you are using [NuGet](https://nuget.org/) you can install the assembly with:
+## License
+This project is licensed under the same [Apache-2.0 License](LICENSE) as the original project.
 
-`PM> Install-Package ImageListView`
+[nuget]: https://www.nuget.org/packages/ImageListViewCore
+[nuget-shield]: https://img.shields.io/nuget/v/ImageListViewCore.svg?label=NuGet
+[nuget-shield-dl]: https://img.shields.io/nuget/dt/ImageListViewCore?label=Downloads&color=red
 
-# Documentation #
-
-Please visit: http://oozcitak.github.io/imagelistview/
-
-# Donations #
-Please consider becoming a backer or sponsor to help support development.
-
-[<img src="https://opencollective.com/webpack/donate/button@2x.png?color=blue" alt="Donate Button" width="300"/>](https://opencollective.com/imagelistview)
+[original]: https://github.com/oozcitak/imagelistview
