@@ -24,11 +24,7 @@ namespace Manina.Windows.Forms
     /// </summary>
     internal static class Extractor
     {
-#if USEWIC
         private static bool useWIC = true;
-#else
-        private static bool useWIC = false;
-#endif
         private static IExtractor instance = null;
 
         public static IExtractor Instance
@@ -62,14 +58,8 @@ namespace Manina.Windows.Forms
             }
             set
             {
-#if USEWIC
                 useWIC = value;
                 instance = null;
-#else
-                useWIC = false;
-                if (value)
-                    System.Diagnostics.Debug.WriteLine("Trying to set UseWIC option although the library was compiled without WPF/WIC support.");
-#endif
             }
         }
     }

@@ -51,28 +51,6 @@
 		<None Include="..\LICENSE" Pack="true" PackagePath="\" />
 	</ItemGroup>
 
-	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-		<DefineConstants>TRACE;DEBUG;BONUSPACK;USEWIC;BENCHMARK</DefineConstants>
-	</PropertyGroup>
-
-	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-		<DefineConstants>TRACE;USEWIC</DefineConstants>
-		<UseVSHostingProcess>false</UseVSHostingProcess>
-	</PropertyGroup>
-
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug without WPF|AnyCPU'">
-		<DebugSymbols>true</DebugSymbols>
-		<OutputPath>bin\Debug without WPF\</OutputPath>
-		<DefineConstants>TRACE;DEBUG;BONUSPACK;BENCHMARK</DefineConstants>
-	</PropertyGroup>
-
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release without WPF|AnyCPU'">
-		<OutputPath>bin\Release without WPF\</OutputPath>
-		<Optimize>true</Optimize>
-		<UseVSHostingProcess>false</UseVSHostingProcess>
-		<WarningLevel>0</WarningLevel>
-	</PropertyGroup>
-
 	<ItemGroup Condition="'$(TargetFramework)' == 'net35' OR '$(TargetFramework)' == 'net48'">
 		<Reference Include="System.Design" />
 	</ItemGroup>
