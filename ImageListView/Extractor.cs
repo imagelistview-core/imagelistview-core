@@ -33,18 +33,15 @@ namespace Manina.Windows.Forms
             {
                 if (instance == null)
                 {
-                    if (!useWIC)
-                    {
-                        instance = new GDIExtractor();
-                    }
-                    else
+                    if (useWIC)
                     {
                         instance = new WPFExtractor();
                     }
+                    else
+                    {
+                        instance = new GDIExtractor();
+                    }
                 }
-
-                if (instance == null)
-                    instance = new GDIExtractor();
 
                 return instance;
             }
