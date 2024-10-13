@@ -11,7 +11,6 @@ Task("Clean")
 {
     CleanDirectory(artifacts);
     CleanDirectory($"./ImageListView/bin/{configuration}");
-    CleanDirectory($"./ImageListView.Wic/bin/{configuration}");
 });
 
 Task("Restore")
@@ -65,8 +64,8 @@ Task("Pack")
             .SetVerbosity(Verbosity.Minimal)
             .SetConfiguration(configuration)
             .WithProperty("PackageOutputPath", "../artifacts")
-            .WithProperty("PackageVersion", actualVersion)
             .WithProperty("GeneratePackageOnBuild", "true")
+            .WithProperty("Version", actualVersion)
             .WithTarget("Build")
     );
 
