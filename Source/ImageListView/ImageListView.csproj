@@ -38,6 +38,7 @@
 	<PropertyGroup>
 		<Authors>Özgür Özçıtak</Authors>
 		<Title>ImageListViewCore</Title>
+		<PackageIcon>icon.png</PackageIcon>
 		<PackageId>ImageListViewCore</PackageId>
 		<Copyright>© 2013 Özgür Özçıtak</Copyright>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
@@ -52,6 +53,7 @@
 	<ItemGroup>
 		<None Include="..\..\README.md" Pack="true" PackagePath="\" />
 		<None Include="..\..\LICENSE" Pack="true" PackagePath="\" />
+		<None Include="..\..\Images\icon.png" Pack="true" PackagePath="\" />
 	</ItemGroup>
 
 	<ItemGroup Condition="'$(TargetFramework)' == 'net35' OR '$(TargetFramework)' == 'net48'">
