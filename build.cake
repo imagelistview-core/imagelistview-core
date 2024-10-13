@@ -3,14 +3,14 @@ var configuration = Argument("configuration", "Release");
 
 var version = Argument("package-version", "");
 
-var solution = "./ImageListView.sln";
+var solution = "./Source/ImageListView.sln";
 var artifacts = "./artifacts";
 
 Task("Clean")
     .Does(() =>
 {
     CleanDirectory(artifacts);
-    CleanDirectory($"./ImageListView/bin/{configuration}");
+    CleanDirectory($"./Source/ImageListView/bin/{configuration}");
 });
 
 Task("Restore")
@@ -63,7 +63,7 @@ Task("Pack")
     MSBuild(solution, s => s
             .SetVerbosity(Verbosity.Minimal)
             .SetConfiguration(configuration)
-            .WithProperty("PackageOutputPath", "../artifacts")
+            .WithProperty("PackageOutputPath", "../../artifacts")
             .WithProperty("GeneratePackageOnBuild", "true")
             .WithProperty("Version", actualVersion)
             .WithTarget("Build")
