@@ -13,7 +13,8 @@ namespace ImageListView.Tests
             var publicApi = typeof(Manina.Windows.Forms.ImageListView).Assembly
                 .GeneratePublicApi();
 
-            return Verifier.Verify(publicApi);
+            return Verifier.Verify(publicApi)
+                .UniqueForTargetFrameworkAndVersion();
         }
     }
 }
