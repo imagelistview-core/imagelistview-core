@@ -69,13 +69,18 @@ Task("Pack")
             .WithTarget("Build")
     );
 
-    var files = GetFiles($"{artifacts}/*.nupkg");
-
-    context.NuGetPush(files, new NuGetPushSettings
+    var pushSettings = new DotNetNuGetPushSettings
     {
         ApiKey = apiKey,
         Source = "https://api.nuget.org/v3/index.json",
-    });
+    };
+
+    var files = GetFiles($"{artifacts}/*.nupkg");
+
+    foreach (var file in files)
+    {
+        context.DotNetNuGetPush(file, pushSettings);
+    }
 });
 
 RunTarget(target);
